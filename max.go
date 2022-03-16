@@ -47,10 +47,9 @@ func counter(arr []uint64, n uint64, max uint64) uint64 {
 			n++
 		}
 	}
-
-	// var sum uint64 = 1
-	// for i := uint64(0); i < k; i++ {
-	// 	sum *= (n - uint64(i))
-	// }
-	// return sum
+        var sum uint64 = 1
+	for i := uint64(0); i < k; i++ {
+	        sum *= (n - uint64(i))
+	}
+	return sum/k
 }
